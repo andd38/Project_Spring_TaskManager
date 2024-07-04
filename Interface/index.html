@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Register Task</a></li>
+                <li><a href="taskview.html">Task View</a></li>
+            </ul>
+        </nav>
+        <h3 id="titulo"><span style="color: white;">Task </span>Controller</h3>
+    </header>
+
+    <div class="grid">
+        <aside class="aside"></aside>
+        <main class="main">
+
+            <h1>Register <span style="color: black;">Task</span> </h1>
+                         
+            <div class="input-container" style="margin-top: 70px ">
+                <input class="inputTitulo"  autocomplete="off" required placeholder="Insira o título" />
+                <label for="titulo">Título</label>
+            </div>
+            
+            <div class="textarea-container">
+                <textarea id="descricao" name="descricao" autocomplete="off" required placeholder="Insira a descrição"></textarea>
+                <label for="descricao">Descrição</label>
+            </div>
+
+            <button id="submit" class="btn-grad">Enviar</button>
+        </main>
+    </div>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+    <script src="js/index.js"></script>
+</body>
+</html>
