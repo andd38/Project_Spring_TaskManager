@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/taskview.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Register Task</a></li>
+                <li><a href="taskview.html">Task View</a></li>
+            </ul>
+        </nav>
+        <h3 id="titulo"><span style="color: white;">Task </span>Controller</h3>
+    </header>
+
+    <div class="grid">
+        <main class="main">
+    <div class="table-container">
+        <table class="modern-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Título</th>
+                    <th>Descrição</th>
+                    <th>Requisitado</th>
+                    <th>Status</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Estágio</td>
+                    <td><textarea id="textareaView" readonly>olá gente, testando</textarea></td>
+                    <td>04/07/2024</td>
+                    <td>Pendente</td>
+         
+                </tr>             
+            </tbody>
+        </table>
+    </div>
+
+    <div class="pagination">
+        <button id="btn-grad" class="prev-page">Anterior</button>
+        <span class="page-num">1</span>
+        <button id="btn-grad" class="next-page">Próxima</button>   
+        </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.querySelector('.hamburger-menu').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
