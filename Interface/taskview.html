@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/taskview.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
@@ -31,30 +32,23 @@
                     <th>ID</th>
                     <th>Título</th>
                     <th>Descrição</th>
-                    <th>Requisitado</th>
+                    <th>Data de Criação</th>
                     <th>Status</th>
-                    
+                    <th>Apagar</th>
+                    <th>Alterar</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Estágio</td>
-                    <td><textarea id="textareaView" readonly>olá gente, testando</textarea></td>
-                    <td>04/07/2024</td>
-                    <td>Pendente</td>
-         
-                </tr>             
+            <tbody id="tabela-corpo">
+               
             </tbody>
         </table>
     </div>
 
     <div class="pagination">
-        <button id="btn-grad" class="prev-page">Anterior</button>
-        <span class="page-num">1</span>
-        <button id="btn-grad" class="next-page">Próxima</button>   
-        </main>
 
+      
+    </div>
+</main>
     <footer>
     </footer>
 
@@ -63,5 +57,8 @@
             document.querySelector('.menu').classList.toggle('show');
         });
     </script>
+    <script type="module" src="Requisições/getTasks.js"></script>
+    <script type="module" src="Requisições/removeTask.js"></script>
+    <script type="module" src="Requisições/EditTasks.js"></script>
 </body>
 </html>

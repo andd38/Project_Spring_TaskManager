@@ -269,3 +269,22 @@ body {
 .menu li {
     padding: 10px 0;
 }
+
+.success-box {
+    background-color: #0fe0c5; 
+    color: white; 
+    padding: 10px;
+    position: fixed; 
+    top: 50px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 1000; 
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    opacity: 1; 
+    transition: opacity 0.3s ease; 
+}
+
+.success-box.fadeOut {
+    opacity: 0; 
+}

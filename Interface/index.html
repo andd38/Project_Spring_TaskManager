@@ -27,18 +27,19 @@
         <main class="main">
 
             <h1>Register <span style="color: black;">Task</span> </h1>
-                         
+            <form id="formulario" method="post">       
             <div class="input-container" style="margin-top: 70px ">
-                <input class="inputTitulo"  autocomplete="off" required placeholder="Insira o título" />
+                <input class="inputTitulo"  autocomplete="off" placeholder="Insira o título" required />
                 <label for="titulo">Título</label>
             </div>
             
             <div class="textarea-container">
-                <textarea id="descricao" name="descricao" autocomplete="off" required placeholder="Insira a descrição"></textarea>
+                <textarea id="descricao" name="descricao" autocomplete="off" placeholder="Insira a descrição" required></textarea>
                 <label for="descricao">Descrição</label>
             </div>
 
-            <button id="submit" class="btn-grad">Enviar</button>
+            <button type="submit" id="submit" class="btn-grad">Enviar</button>
+        </form>  
         </main>
     </div>
 
@@ -50,6 +51,6 @@
             document.querySelector('.menu').classList.toggle('show');
         });
     </script>
-    <script src="js/index.js"></script>
+    <script src="Requisições/criarTask.js"></script>
 </body>
 </html>
